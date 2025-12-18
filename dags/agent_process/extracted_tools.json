@@ -1,0 +1,30 @@
+[
+  {
+    "name": "get_current_date",
+    "description": "No description provided.",
+    "parameters": {
+      "type": "object",
+      "properties": {},
+      "required": []
+    }
+  },
+  {
+    "name": "get_weather",
+    "description": "No description provided.",
+    "parameters": {
+      "description": "Input for getting weather",
+      "properties": {
+        "city": {
+          "description": "The name of the city for which to retrieve the weather.",
+          "title": "City",
+          "type": "string"
+        }
+      },
+      "required": [
+        "city"
+      ],
+      "title": "GetWeatherInput",
+      "type": "object"
+    }
+  }
+]
