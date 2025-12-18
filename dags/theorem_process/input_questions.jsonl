@@ -1,0 +1,136 @@
+{"question": "Prove that for any sets $A$ and $B$, $A \cup B = B \cup (A \setminus B)$. (Set Theory)"}
+{"question": "Prove that if $A \subseteq B$ and $B \subseteq C$, then $A \subseteq C$. (Set Theory)"}
+{"question": "Prove the Distributive Law for sets: $A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$. (Set Theory)"}
+{"question": "Prove De Morgan's Law for sets: $(A \cup B)^c = A^c \cap B^c$. (Set Theory)"}
+{"question": "Prove that $A \setminus (B \cup C) = (A \setminus B) \cap (A \setminus C)$. (Set Theory)"}
+{"question": "Prove that the intersection of the power sets is the power set of the intersection: $\mathcal{P}(A) \cap \mathcal{P}(B) = \mathcal{P}(A \cap B)$. (Set Theory)"}
+{"question": "Prove that $A \times (B \cap C) = (A \times B) \cap (A \times C)$. (Set Theory)"}
+{"question": "Prove the definition of symmetric difference: $A \triangle B = (A \setminus B) \cup (B \setminus A)$. (Set Theory)"}
+{"question": "Prove that $A \subseteq B$ if and only if $A \cap B = A$. (Set Theory)"}
+{"question": "Prove that if $A \subseteq B$, then $A \cup C \subseteq B \cup C$ for any set $C$. (Set Theory)"}
+{"question": "Prove that the square of any odd integer is of the form $8k + 1$ for some integer $k$. (Number Theory)"}
+{"question": "Prove that if $a \mid b$ and $b \mid c$, then $a \mid c$. (Number Theory)"}
+{"question": "Prove that $\sqrt{2}$ is irrational. (Proof by Contradiction)"}
+{"question": "Prove that the sum of two rational numbers is rational. (Number Theory)"}
+{"question": "Prove that there are infinitely many prime numbers. (Euclid's Proof)"}
+{"question": "Prove by induction that for all integers $n \ge 1$, $\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$. (Number Theory)"}
+{"question": "Prove by induction that for all integers $n \ge 4$, $2^n < n!$. (Number Theory)"}
+{"question": "Prove that for any integer $n$, $3 \mid (n^3 - n)$. (Number Theory)"}
+{"question": "Prove that if $a \equiv b \pmod m$, then $a^2 \equiv b^2 \pmod m$. (Number Theory)"}
+{"question": "Prove that $\gcd(a, b) = \gcd(a, b-a)$ for any non-zero integers $a$ and $b$. (Number Theory)"}
+{"question": "Prove that the product of two even integers is divisible by 4. (Number Theory)"}
+{"question": "Prove that if $n^2$ is even, then $n$ is even. (Proof by Contrapositive)"}
+{"question": "Prove that $5 \mid (n^5 - n)$ for any integer $n$. (Number Theory)"}
+{"question": "Prove that if $p$ is a prime and $p \mid ab$, then $p \mid a$ or $p \mid b$. (Number Theory, Euclid's Lemma)"}
+{"question": "Prove by induction that the sum of the first $n$ odd positive integers is $n^2$: $\sum_{i=1}^{n} (2i-1) = n^2$. (Number Theory)"}
+{"question": "Prove using the $\epsilon-\delta$ definition that $\lim_{x \to 3} (2x + 1) = 7$. (Real Analysis)"}
+{"question": "Prove using the $\epsilon-N$ definition that the sequence $a_n = \frac{1}{n}$ converges to $0$. (Real Analysis)"}
+{"question": "Prove that the function $f(x) = x^2$ is continuous at $x=c$ for any $c \in \mathbb{R}$. (Real Analysis)"}
+{"question": "Prove that if a sequence $\{a_n\}$ converges, then it is bounded. (Real Analysis)"}
+{"question": "Prove that the sum of two continuous functions is continuous. (Real Analysis)"}
+{"question": "Prove using the $\epsilon-N$ definition that $\lim_{n \to \infty} \frac{2n+1}{n+5} = 2$. (Real Analysis)"}
+{"question": "Prove that the derivative of $f(x) = x^2$ is $f'(x) = 2x$ using the limit definition of the derivative. (Calculus)"}
+{"question": "Prove the Intermediate Value Theorem (IVT): If $f: [a, b] \to \mathbb{R}$ is continuous and $f(a)f(b) < 0$, then there exists $c \in (a, b)$ such that $f(c) = 0$. (Real Analysis)"}
+{"question": "Prove that every convergent sequence is a Cauchy sequence. (Real Analysis)"}
+{"question": "Prove that the set of real numbers $\mathbb{R}$ is uncountable. (Cantor's Diagonalization Argument)"}
+{"question": "Prove that the composition of two continuous functions is continuous. (Real Analysis)"}
+{"question": "Prove that the limit of a sequence is unique. (Real Analysis)"}
+{"question": "Prove that the function $f(x) = |x|$ is continuous everywhere but not differentiable at $x=0$. (Real Analysis)"}
+{"question": "Prove that $e^x \ge 1 + x$ for all $x \in \mathbb{R}$. (Calculus/Analysis)"}
+{"question": "Prove the Extreme Value Theorem (EVT): If $f(x)$ is continuous on the closed interval $[a, b]$, it attains both a maximum and a minimum value on $[a, b]$. (Real Analysis)"}
+{"question": "Prove that the identity element in a group is unique. (Abstract Algebra)"}
+{"question": "Prove that every element in a group has a unique inverse. (Abstract Algebra)"}
+{"question": "Prove that the set of $2 \times 2$ matrices with real entries forms a group under matrix addition. (Abstract Algebra)"}
+{"question": "Prove that the intersection of any two subgroups is a subgroup. (Abstract Algebra)"}
+{"question": "Prove that in an abelian group $G$, $(ab)^n = a^n b^n$ for all $a, b \in G$ and all integers $n$. (Abstract Algebra)"}
+{"question": "Prove that the set $\{1, -1\}$ forms a group under standard multiplication. (Abstract Algebra)"}
+{"question": "Prove that the center of a group $Z(G) = \{g \in G \mid gx = xg \text{ for all } x \in G\}$ is a subgroup of $G$. (Abstract Algebra)"}
+{"question": "Prove that every cyclic group is abelian. (Abstract Algebra)"}
+{"question": "Prove the Subgroup Criterion: A non-empty subset $H$ of a group $G$ is a subgroup if and only if for all $a, b \in H$, $ab^{-1} \in H$. (Abstract Algebra)"}
+{"question": "Prove that the mapping $\phi: \mathbb{Z} \to \mathbb{Z}_n$ defined by $\phi(x) = x \pmod n$ is a group homomorphism under addition. (Abstract Algebra)"}
+{"question": "Prove that a group $G$ is abelian if and only if $(ab)^2 = a^2 b^2$ for all $a, b \in G$. (Abstract Algebra)"}
+{"question": "Prove that the kernel of a group homomorphism is a subgroup. (Abstract Algebra)"}
+{"question": "Prove that the set of even integers $2\mathbb{Z}$ is a subring of the ring of integers $\mathbb{Z}$. (Abstract Algebra)"}
+{"question": "Prove that $\mathbb{Z}_p$ (the integers modulo $p$) is a field if and only if $p$ is a prime number. (Abstract Algebra)"}
+{"question": "Prove that if $g^2 = e$ for all elements $g$ in a group $G$, then $G$ is abelian. (Abstract Algebra)"}
+{"question": "Prove that the set of all $n \times m$ matrices with real entries forms a vector space under matrix addition and scalar multiplication. (Linear Algebra)"}
+{"question": "Prove that the zero vector $\mathbf{0}$ in a vector space is unique. (Linear Algebra)"}
+{"question": "Prove that if $S = \{\mathbf{v}_1, \mathbf{v}_2, \ldots, \mathbf{v}_k\}$ is a linearly independent set of vectors, then $\mathbf{v}_1 \ne \mathbf{0}$. (Linear Algebra)"}
+{"question": "Prove that if a set of $n$ vectors spans a vector space $V$, then any set of $n+1$ vectors in $V$ is linearly dependent. (Linear Algebra)"}
+{"question": "Prove that the determinant of a $2 \times 2$ matrix $A$ is zero if and only if the rows of $A$ are linearly dependent. (Linear Algebra)"}
+{"question": "Prove that the set $W = \{(x, y, z) \in \mathbb{R}^3 \mid x+y+z=0\}$ is a subspace of $\mathbb{R}^3$. (Linear Algebra)"}
+{"question": "Prove that if $A$ and $B$ are invertible $n \times n$ matrices, then $AB$ is invertible and $(AB)^{-1} = B^{-1}A^{-1}$. (Linear Algebra)"}
+{"question": "Prove that for any two $n \times n$ matrices $A$ and $B$, $\det(AB) = \det(A) \det(B)$. (Linear Algebra)"}
+{"question": "Prove that a square matrix $A$ is invertible if and only if $\det(A) \ne 0$. (Linear Algebra)"}
+{"question": "Prove that the image (range) of a linear transformation $T: V \to W$ is a subspace of $W$. (Linear Algebra)"}
+{"question": "Prove that the null space (kernel) of a linear transformation $T: V \to W$ is a subspace of $V$. (Linear Algebra)"}
+{"question": "Prove that the eigenvalues of a symmetric matrix are real. (Linear Algebra)"}
+{"question": "Prove that if $\lambda$ is an eigenvalue of $A$, then $\lambda^2$ is an eigenvalue of $A^2$. (Linear Algebra)"}
+{"question": "Prove that a basis for a vector space is a linearly independent set that spans the space. (Linear Algebra)"}
+{"question": "Prove that if a vector space $V$ has a basis of $n$ vectors, then every basis of $V$ has $n$ vectors. (Linear Algebra)"}
+{"question": "Prove the logical equivalence: $P \to Q \equiv \neg Q \to \neg P$. (Logic/Contrapositive)"}
+{"question": "Prove De Morgan's Law for Logic: $\neg (P \land Q) \equiv \neg P \lor \neg Q$. (Logic)"}
+{"question": "Prove that for all real numbers $x$, if $x > 3$, then $x^2 > 9$. (Logic/Real Numbers)"}
+{"question": "Prove that if $m$ and $n$ are integers, $m^2 - n^2$ is odd if and only if $m$ and $n$ have different parity. (Logic/Number Theory)"}
+{"question": "Prove that for any statement $P$, $P \lor \neg P$ is a tautology. (Logic)"}
+{"question": "Prove that if the conclusion of an implication is true, the implication itself is true. (Logic)"}
+{"question": "Prove that if $P \land Q$ is true, then $P \lor Q$ is true. (Logic)"}
+{"question": "Prove that for a function $f: A \to B$, $f(A_1 \cap A_2) \subseteq f(A_1) \cap f(A_2)$ for any subsets $A_1, A_2 \subseteq A$. (Functions/Logic)"}
+{"question": "Prove that for a function $f: A \to B$, $f^{-1}(B_1 \cup B_2) = f^{-1}(B_1) \cup f^{-1}(B_2)$ for any subsets $B_1, B_2 \subseteq B$. (Functions/Logic)"}
+{"question": "Prove that the Well-Ordering Principle (WOP) is equivalent to the Principle of Mathematical Induction (PMI). (Foundations)"}
+{"question": "Prove the Pigeonhole Principle: If $n$ items are put into $m$ containers, with $n > m$, then at least one container must contain more than one item. (Combinatorics)"}
+{"question": "Prove that a connected graph $G$ is a tree if and only if it has $n-1$ edges, where $n$ is the number of vertices. (Graph Theory)"}
+{"question": "Prove the Handshaking Lemma: In any graph, the sum of the degrees of the vertices is equal to twice the number of edges. (Graph Theory)"}
+{"question": "Prove by induction that a set with $n$ elements has $2^n$ subsets. (Combinatorics)"}
+{"question": "Prove that the number of edges in a complete graph $K_n$ is $\frac{n(n-1)}{2}$. (Graph Theory/Combinatorics)"}
+{"question": "Prove that if a graph has $n$ vertices and is connected, it must have at least $n-1$ edges. (Graph Theory)"}
+{"question": "Prove that any tree with at least two vertices has at least two leaves (vertices of degree 1). (Graph Theory)"}
+{"question": "Prove that for non-negative integers $n$ and $k$ with $0 \le k \le n$, $\binom{n}{k} = \binom{n}{n-k}$. (Combinatorics)"}
+{"question": "Prove Pascal's Identity: $\binom{n}{k} = \binom{n-1}{k-1} + \binom{n-1}{k}$ for $1 \le k \le n$. (Combinatorics)"}
+{"question": "Prove that any closed walk in a graph contains a cycle. (Graph Theory)"}
+{"question": "Prove that a function $f: A \to B$ is injective (one-to-one) if and only if for all subsets $C \subseteq A$, $f^{-1}(f(C)) = C$. (Functions)"}
+{"question": "Prove that the open interval $(0, 1)$ has the same cardinality as the set of real numbers $\mathbb{R}$. (Cardinality)"}
+{"question": "Prove that if a function $f: A \to B$ is bijective, then its inverse $f^{-1}: B \to A$ is also bijective. (Functions)"}
+{"question": "Prove that the complex conjugate of the product of two complex numbers is the product of their complex conjugates: $\overline{z_1 z_2} = \overline{z_1} \overline{z_2}$. (Complex Analysis)"}
+{"question": "Prove that if $z$ is a complex number, then $z \cdot \overline{z} = |z|^2$. (Complex Analysis)"}
+{"question": "Prove that the union of two countable sets is countable. (Cardinality)"}
+{"question": "Prove that every nonzero real number has a multiplicative inverse. (Field Axioms)"}
+{"question": "Prove that if $a, b, c$ are real numbers and $a > b$ and $c < 0$, then $ac < bc$. (Inequalities)"}
+{"question": "Prove that if $f: A \to B$ and $g: B \to C$ are injective functions, then their composition $g \circ f: A \to C$ is also injective. (Functions)"}
+{"question": "Prove that a function $f: A \to B$ is surjective (onto) if and only if $f(A)=B$. (Functions)"}
+{"question": "Prove that the only idempotent element in a group $G$ (i.e., $x$ such that $x^2 = x$) is the identity element $e$. (Abstract Algebra)"}
+{"question": "Prove that if $n$ is a positive integer, then $n$ is odd if and only if $n^2$ is odd. (Number Theory)"}
+{"question": "Prove that for any three integers $a, b, c$, if $a \mid b$ and $a \mid c$, then $a \mid (b+c)$. (Number Theory)"}
+{"question": "Prove that the empty set $\emptyset$ is a subset of every set $A$. (Set Theory)"}
+{"question": "Prove that if $A$ is a finite set, then $|A| < |\mathcal{P}(A)|$. (Cardinality/Set Theory)"}
+{"question": "Prove that the product of four consecutive integers is always divisible by 24. (Number Theory)"}
+{"question": "Prove that the function $f(x) = \frac{1}{x}$ on $(0, \infty)$ is injective. (Functions)"}
+{"question": "Prove that if $\lambda$ is an eigenvalue of an orthogonal matrix $Q$, then $|\lambda|=1$. (Linear Algebra)"}
+{"question": "Prove that every subset of a linearly independent set is linearly independent. (Linear Algebra)"}
+{"question": "Prove that $\lim_{x \to \infty} \frac{1}{x} = 0$ using the formal definition of a limit at infinity. (Real Analysis)"}
+{"question": "Prove that the alternating harmonic series $\sum_{n=1}^{\infty} \frac{(-1)^{n+1}}{n}$ converges. (Real Analysis)"}
+{"question": "Prove that every subgroup of a cyclic group is cyclic. (Abstract Algebra)"}
+{"question": "Prove Lagrange's Theorem: If $G$ is a finite group and $H$ is a subgroup of $G$, then $|H|$ divides $|G|$. (Abstract Algebra)"}
+{"question": "Prove that the graph $K_5$ (the complete graph on 5 vertices) is non-planar. (Graph Theory)"}
+{"question": "Prove that if $v$ is a vertex of degree $k$ in a graph $G$, then $v$ is incident to $k$ edges. (Graph Theory)"}
+{"question": "Prove that the sum of the interior angles of a convex $n$-sided polygon is $(n-2) \cdot 180^{\circ}$ by induction. (Geometry/Induction)"}
+{"question": "Prove that if $x$ is a positive real number, then $x + \frac{1}{x} \ge 2$. (Inequalities)"}
+{"question": "Prove that for any integer $n$, $n^2 + n + 1$ is always odd. (Number Theory)"}
+{"question": "Prove that if $x$ is an element of a group $G$ and $x^k = e$ for some integer $k$, then the order of $x$ divides $k$. (Abstract Algebra)"}
+{"question": "Prove that the set of all polynomials of degree at most $n$ forms a vector space. (Linear Algebra)"}
+{"question": "Prove that a sequence is convergent if and only if all its subsequences converge to the same limit. (Real Analysis)"}
+{"question": "Prove that the distance between any two distinct real numbers is positive. (Real Analysis)"}
+{"question": "Prove that if $A \subseteq B$, then $A^c \supseteq B^c$. (Set Theory)"}
+{"question": "Prove that for any three sets $A, B, C$, $A \times (B \cup C) = (A \times B) \cup (A \times C)$. (Set Theory)"}
+{"question": "Prove that the difference of two odd integers is an even integer. (Number Theory)"}
+{"question": "Prove that if $n$ is a perfect square, then $n \not\equiv 2 \pmod 3$. (Number Theory)"}
+{"question": "Prove that if $A$ is an $n \times n$ matrix, then $A + A^T$ is a symmetric matrix. (Linear Algebra)"}
+{"question": "Prove that the null space and the column space of a matrix $A$ only intersect at the zero vector, i.e., $\text{Null}(A) \cap \text{Col}(A) = \{\mathbf{0}\}$. (Linear Algebra)"}
+{"question": "Prove that if $f$ and $g$ are surjective functions, their composition $g \circ f$ is also surjective. (Functions)"}
+{"question": "Prove that $\sum_{i=0}^{n} \binom{n}{i} = 2^n$. (Combinatorics/Binomial Theorem)"}
+{"question": "Prove that every non-trivial connected graph has at least one spanning tree. (Graph Theory)"}
+{"question": "Prove that the set of even integers $2\mathbb{Z}$ is countable. (Cardinality)"}
+{"question": "Prove that if $x$ is a real number, then $x^2 \ge 0$. (Real Analysis)"}
+{"question": "Prove that the multiplicative inverse of a non-zero element in a field is unique. (Abstract Algebra)"}
+{"question": "Prove that for any integers $a$ and $b$, $\gcd(a, b) = \gcd(|a|, |b|)$. (Number Theory)"}
+{"question": "Prove that the empty set is unique. (Set Theory)"}
