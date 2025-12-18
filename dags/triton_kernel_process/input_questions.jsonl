@@ -1,0 +1,100 @@
+{"question": "Fused element-wise kernel: ReLU(x) + Tanh(y) for 4D tensors, optimized for high occupancy."}
+{"question": "Element-wise $A = \\log(1 + e^B)$ (Softplus) with overflow protection."}
+{"question": "Fused kernel for Sigmoid and its gradient (\\sigma(x) \\cdot (1 - \\sigma(x)))."}
+{"question": "Element-wise application of Swish activation: $x \\cdot \\text{Sigmoid}(\\beta x)$."}
+{"question": "Fused two-input comparison and selection: $C = (A > B) ? A \\cdot 2.0 : B \\cdot 0.5$."}
+{"question": "Custom activation function $f(x) = \\sin(x) / (1 + x^2)$ for scientific machine learning."}
+{"question": "Fused element-wise multiplication and accumulation: $\\sum_i (A_i \\cdot B_i) \\to C$."}
+{"question": "Ternary element-wise operation: $C = (x > 0) ? \\sqrt{x} : -x^2$."}
+{"question": "Kernel for $\\text{GELU}(x)$ approximation, fusing multiple basic arithmetic operations."}
+{"question": "Element-wise conversion from FP16 to FP32, combined with bias addition."}
+{"question": "Custom blocked reduction kernel for the L2 norm of a 2D matrix (M x K) across the K dimension, optimizing for shared memory usage."}
+{"question": "Fused row-wise Mean and Variance calculation for Layer Normalization on a (B, S, D) tensor."}
+{"question": "Global max reduction kernel for a 3D tensor (B, H, W) to find the maximum value and its index."}
+{"question": "Blocked reduction to compute the sum of squares across the fastest-moving dimension of a 5D tensor."}
+{"question": "Fused kernel for $x / (\\sum x^2 + \\epsilon)$ (vector normalization) on 2D data."}
+{"question": "Warped reduction for $\\text{argmax}$ across the columns of a large matrix."}
+{"question": "Batch normalization backward pass kernel: calculating $\\frac{\\partial L}{\\partial \\gamma}, \\frac{\\partial L}{\\partial \\beta}$ gradients."}
+{"question": "Reduction kernel to count non-zero elements (sparsity metric)."}
+{"question": "Block-wise cumulative sum (prefix sum) along a fixed dimension."}
+{"question": "Cross-entropy loss kernel fusing the $\\log(\\text{softmax})$ and the reduction step."}
+{"question": "High-throughput batched GEMM (B x M x K) @ (B x K x N) -> (B x M x N) with implicit bias addition and fused ReLU, suitable for Triton."}
+{"question": "Quantized GEMM for 8-bit inputs ($A_{int8} \\cdot B_{int8}$) outputting FP32, including de-quantization and scaling within the kernel."}
+{"question": "Block-sparse GEMM where the sparsity pattern of input A is known and used to skip computations."}
+{"question": "Transposed GEMM: $A^T \\cdot B$ with specialized memory layout access patterns."}
+{"question": "Fused GEMM + residual connection: $C = \\text{GEMM}(A, B) + D$, where D is the residual input."}
+{"question": "WGMMA (Warp Group Matrix Multiply Accumulate) based GEMM for specific hardware."}
+{"question": "GEMM where one input matrix is small (M, N < 64) but the batch size is very large (Tiled GEMM optimization)."}
+{"question": "Blocked outer product kernel: $C = A B^T$ (M x 1) @ (1 x N)."}
+{"question": "GEMM with a fused element-wise square and sum after the accumulation: $\\sum (C_{ij})^2$."}
+{"question": "Low-precision accumulation (FP16/BF16) GEMM with a final cast to FP32 output."}
+{"question": "Grouped GEMM where a list of small GEMMs are executed back-to-back efficiently."}
+{"question": "Batched Block Diagonal GEMM, where each block operates independently."}
+{"question": "GEMM kernel specialized for K being a power of two, using optimized shared memory bank conflicts."}
+{"question": "Sparse GEMM (A is sparse) with index/value array input format."}
+{"question": "Tiled $A^T \\cdot B^T$ operation for maximum output matrix size $M \\times N = 8192 \\times 8192$."}
+{"question": "Depthwise $3\\times 3$ convolution kernel with stride 1, focusing on HWC layout and eliminating redundant loads."}
+{"question": "Grouped convolution kernel (G groups, $C_{in}/G$ channels per group) using implicit GEMM approach."}
+{"question": "$1\\times 1$ convolution (equivalent to GEMM) on 4D data (N, C, H, W), optimized for cache reuse."}
+{"question": "Dilated convolution kernel (dilation rate D) focusing on efficiently skipping input pixels."}
+{"question": "Max Pooling $2\\times 2$ kernel with stride 2 for 4D input, fusing with a subsequent ReLU."}
+{"question": "Average Pooling $3\\times 3$ kernel with stride 1, implemented for high throughput."}
+{"question": "Transposed convolution (Deconvolution) kernel for $2\\times 2$ upscale operations."}
+{"question": "3D convolution kernel ($3\\times 3\\times 3$) for volumetric data (D, H, W, C)."}
+{"question": "Convolution backward data (gradient with respect to input) kernel for a $3\\times 3$ filter."}
+{"question": "Convolution backward weight (gradient with respect to filter) kernel for a $1\\times 1$ filter."}
+{"question": "Winograd algorithm tile kernel for $F(2\\times 2, 3\\times 3)$ convolution."}
+{"question": "Asymmetric padding implementation within a convolution kernel (e.g., left=1, right=0)."}
+{"question": "Quantized depthwise convolution kernel ($int8$ in, $int32$ accumulate, $int8$ out)."}
+{"question": "Kernel for implementing spectral normalization layer's power iteration step."}
+{"question": "Fused kernel for $3\\times 3$ convolution followed immediately by $2\\times 2$ max pooling."}
+{"question": "Masked softmax operation on a 4D attention score tensor (B, H, S, S) where the mask is applied element-wise before exponentiation, implemented with block pointers."}
+{"question": "Fused kernel for $\\text{Dropout}(\\text{Add}(\\text{Norm}(\\text{Input})))$ in a transformer block (pre-norm)."}
+{"question": "Fused kernel for $\\text{Attention}(Q, K, V)$ calculation: $\\text{Softmax}(\\frac{QK^T}{\\sqrt{d_k}})V$."}
+{"question": "Custom rotary position embedding (RoPE) application kernel for $Q$ and $K$ vectors (fusing rotation with dot product prep)."}
+{"question": "Causal (triangular) masking of the attention score matrix $QK^T$."}
+{"question": "FlashAttention-style tiled block-wise Softmax reduction for large sequence lengths."}
+{"question": "Fused Feed-Forward Network (FFN) kernel: $GELU(\\text{Linear}_1(x)) \\cdot \\text{Linear}_2(x)$."}
+{"question": "Multi-head attention output projection kernel, merging $H$ head outputs (H, S, $d_{v}$) to (S, D)."}
+{"question": "Batched and fused $Q, K, V$ linear projection kernels from a single input tensor."}
+{"question": "Sliding window attention kernel for local attention patterns, optimizing neighborhood access."}
+{"question": "Fused linear layer and SwiGLU activation: $\\text{Linear}_3(\\text{Swish}(\\text{Linear}_1(x)) \\cdot \\text{Linear}_2(x))$."}
+{"question": "Scaled dot-product attention with external per-sample bias addition."}
+{"question": "Optimized kernel for computing the Llama architecture's Gated MLP."}
+{"question": "Fused kernel for applying relative position bias to attention scores."}
+{"question": "Quantized Linear layer (W is $int8$) with fused bias and residual addition."}
+{"question": "Sparse attention pattern kernel where only specific non-contiguous elements in $QK^T$ are computed."}
+{"question": "Kernel to efficiently pack and unpack variable-length sequences in a batch (ragged tensors)."}
+{"question": "Custom Layer Normalization with $W$ and $b$ parameters applied after mean/variance."}
+{"question": "Fused kernel for $x^T A x$ quadratic form computation, using two GEMM calls."}
+{"question": "Kernel for implementing ALiBi (Attention with Linear Biases) masking efficiently."}
+{"question": "Fused kernel for the LSTM gate operations (i, f, c, o) including the $W_{ii}x_t + W_{hi}h_{t-1} + b_i$ linear combinations and non-linearities, optimizing for memory reuse."}
+{"question": "Custom kernel for the Gated Recurrent Unit (GRU) update and reset gates."}
+{"question": "Segmented scan (prefix sum) operation over a batch of variable-length sequences."}
+{"question": "Backpropagation Through Time (BPTT) weight update kernel for a simple RNN layer."}
+{"question": "Fused kernel for sequence padding and masking on a batch of 2D data."}
+{"question": "Parallel beam search score update kernel, selecting top $k$ candidates across a batch."}
+{"question": "Optimized $H_{t} = \\text{Matmul}(X_{t}, W_x) + \\text{Matmul}(H_{t-1}, W_h)$ where both matrix multiplications are fused."}
+{"question": "Kernel to efficiently handle the bidirectional RNN accumulation of forward and backward states."}
+{"question": "Custom length-based padding and unpadding for token sequences in a batch."}
+{"question": "Kernel for efficiently implementing the temporal attention mechanism used in sequence models."}
+{"question": "Generalized scatter operation (N, D) using an index tensor (N, 1), ensuring atomic updates for concurrent writes."}
+{"question": "Efficient 3D tensor transposition $(H, W, C) \\to (C, H, W)$, avoiding global memory staging."}
+{"question": "Kernel for gather operation with a large index tensor (indexing into a large embedding table)."}
+{"question": "Fused kernel for `squeeze`, `unsqueeze`, and contiguous memory copy of a tensor."}
+{"question": "Custom kernel for tensor slicing where slices are non-uniform across different dimensions."}
+{"question": "Blocked memory copy kernel from device memory to a tiled, shared memory buffer."}
+{"question": "Kernel to perform a circular shift (roll) on a 2D tensor along one axis."}
+{"question": "High-speed, tiled broadcasting kernel for expanding a vector to a large matrix."}
+{"question": "In-place conversion kernel from a fixed layout (e.g., NCHW) to a custom tiled layout."}
+{"question": "Kernel to interleave two tensors (A, B) element-wise into a new tensor (A0, B0, A1, B1...)."}
+{"question": "Custom 8-bit quantization kernel for a weight tensor (K, N), including dynamic scaling factor computation per block."}
+{"question": "Fused kernel for computing and applying a Householder reflection for QR decomposition."}
+{"question": "Tiled kernel for element-wise application of a polynomial function of degree 5."}
+{"question": "Custom gradient clipping kernel applying L2 norm thresholding across an entire weight matrix."}
+{"question": "Kernel for implementing a custom energy function loss (e.g., hinge loss with gradient boost)."}
+{"question": "Tiled kernel for matrix inversion on small $3\\times 3$ matrices in a batch."}
+{"question": "Kernel for calculating the Jacobian-Vector Product (JVP) for a simple neural network layer."}
+{"question": "Fused kernel for $x + y \\cdot z$ (FMA-like operation) on two different precision types."}
+{"question": "Kernel for solving a tridiagonal linear system for physics-informed neural networks."}
+{"question": "Kernel for generating random numbers (e.g., using Philox algorithm) and fusing them with a subsequent operation (e.g., element-wise $\\text{Sigmoid}(x \\cdot \\text{noise})$)."}
